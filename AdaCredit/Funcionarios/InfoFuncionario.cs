@@ -103,7 +103,7 @@ namespace AdaCredit.AdaCredit.Funcionarios
                     senha = Prompt.Password("Senha: ", validators: new[]
                     { Validators.Required(),
                       Validators.MinLength(5),
-                      Validators.MaxLength(10)
+                      Validators.MaxLength(20)
                     });
                 }
                 RepositorioFuncionarios.CadastrarFuncionario(nome, dataNascimento, cpf, telefone, email, cep, senha, nomeUsuario);
@@ -155,7 +155,7 @@ namespace AdaCredit.AdaCredit.Funcionarios
                 var senha = Prompt.Password("Informe a nova senha: ", validators: new[]
                     { Validators.Required(),
                       Validators.MinLength(5),
-                      Validators.MaxLength(10)
+                      Validators.MaxLength(20)
                     });
                 while (ConsolePasswordReader.Read("Confirmar senha: ") != senha)
                 {
@@ -163,7 +163,7 @@ namespace AdaCredit.AdaCredit.Funcionarios
                     senha = Prompt.Password("Informe a nova senha: ", validators: new[]
                     { Validators.Required(),
                       Validators.MinLength(5),
-                      Validators.MaxLength(10)
+                      Validators.MaxLength(20)
                     });
                 }
                 Funcionario.AlterarSenhaFuncionario(funcionario, senha);
