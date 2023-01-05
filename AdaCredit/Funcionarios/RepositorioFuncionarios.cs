@@ -120,7 +120,7 @@ namespace AdaCredit.AdaCredit.Funcionarios
             tabela.Expand();
             foreach (Funcionario funcionario in _funcionarios.OrderBy(x => x.Nome))
             {
-                if (!funcionario.Ativo!)
+                if (!funcionario.Ativo)
                 {
                     continue;
                 }
