@@ -65,10 +65,11 @@ namespace AdaCredit.AdaCredit.Funcionarios
             {
                 cpf = Convert.ToInt64(new Faker().Random.Replace("###########"));
             }
-            var nomeUsuario = new Faker().Random.String2(new Faker().Random.Int(5, 10), nome);
+            var usuario = String.Concat(nome.Split(" ")).ToLower();
+            var nomeUsuario = new Faker().Random.String2(new Faker().Random.Int(5, 10), usuario);
             while (_funcionarios.Any(x => x.NomeUsuario == nomeUsuario))
             {
-                nomeUsuario = new Faker().Random.String2(new Faker().Random.Int(5, 10), nome);
+                nomeUsuario = new Faker().Random.String2(new Faker().Random.Int(5, 10), usuario);
             }
                 _funcionarios.Add(Funcionario.CadastrarFuncionarioFaker(nome, dataNascimento, cpf, telefone, email, 
                     cep, nomeUsuario, senha, dataUltimoLogin));
