@@ -205,7 +205,7 @@ namespace AdaCredit.AdaCredit.Clientes
                 var agenciaDestino = new Faker().PickRandom("0001", "0002");
                 string contaDestino;
                 var tipoTransacao = new Faker().PickRandom("TED", "TEF", "DOC");
-                var valor = new Faker().Random.Decimal(0, 2000).ToString("F2", CultureInfo.CreateSpecificCulture("en-US"));
+                var valor = new Faker().Random.Decimal(200, 2000).ToString("F2", CultureInfo.CreateSpecificCulture("en-US"));
                 string bancoParceiro;
                 var dataTransacao = new Faker().PickRandom("20221129", "20221130", "20221201", "20221202");
                 if (bancoOrigem != "777")
