@@ -239,7 +239,9 @@ namespace AdaCredit.AdaCredit.Transacoes
             .AddColumn(new TableColumn("[magenta]Data Transação[/]").Centered())
             .AddColumn(new TableColumn("[magenta]Erro[/]").Centered());
             tabela.Expand();
-            foreach (FileInfo arquivo in pastaTransacoesFalharam.EnumerateFiles())
+            foreach (FileInfo arquivo in pastaTransacoesFalharam.EnumerateFiles().OrderBy(
+                x => DateTime.ParseExact(Path.GetFileNameWithoutExtension(x.Name).Split("-")[Path.GetFileNameWithoutExtension(x.Name).Split("-").Length - 2],
+                "yyyyMMdd", CultureInfo.InvariantCulture)))
             {
                 using (StreamReader sr = arquivo.OpenText())
                 {
