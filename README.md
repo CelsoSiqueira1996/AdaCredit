@@ -1,6 +1,8 @@
 # Projeto Final do módulo 1 Turma 958 Ada
 O primeiro login exige um usuário e senha iniciais, respectivamente, "user" e "pass".
+
 Os arquivos/dados faker são gerados logo após o cadastramento do primeiro funcionário.
+
 Os arquivos que contêm os clientes e os funcionários serão salvos na mesma pasta do arquivo .exe do sistema.
 Os arquivos de transação serão salvos no desktop, na pasta Transactios (a mesma será criada no caso de sua ausência).
 São gerados 30 clientes (saldos entre 0.00 e 5000.00), 15 funcionários e 200 transações pendentes (valores entre 200.00 e 2000.00).
