@@ -1,4 +1,4 @@
-# AdaCredit
+# Projeto Final do módulo 1 Turma 958 Ada
 O primeiro login exige um usuário e senha iniciais, respectivamente, "user" e "pass".
 Os arquivos/dados faker são gerados logo após o cadastramento do primeiro funcionário.
 Os arquivos que contêm os clientes e os funcionários serão salvos na mesma pasta do arquivo .exe do sistema.
