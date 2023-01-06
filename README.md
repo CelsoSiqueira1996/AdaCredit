@@ -1,4 +1,5 @@
 # Projeto Final do módulo 1 Turma 958 Ada
+# Considerações em relação ao projeto
 O primeiro login exige um usuário e senha iniciais, respectivamente, "user" e "pass".
 
 Os arquivos/dados faker são gerados logo após o cadastramento do primeiro funcionário.
