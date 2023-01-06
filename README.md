@@ -1,5 +1,5 @@
 # Projeto Final do módulo 1 Turma 958 Ada
-# Considerações em relação ao projeto #
+## Considerações em relação ao projeto
 O primeiro login exige um usuário e senha iniciais, respectivamente, "user" e "pass".
 
 Os arquivos/dados faker são gerados logo após o cadastramento do primeiro funcionário.
@@ -24,7 +24,7 @@ Ao desativar uma conta de um cliente o saldo fica congelado. Caso a conta seja r
 
 Ao cadastrar um novo cliente, seu saldo inicia com valor zero. Entradas e saídas de valores das contas só ocorrem por meio das transações.
 
-# Enunciado
+## Enunciado
 Você foi contratado para construção de um sistema de controle para uma pequena cooperativa digital de crédito local, a Ada Credit (Código Bancário 777).
 
 Para garantir a segurança das informações, o sistema deve exigir login e senha para que seja possível a sua operação. O usuário e senha "iniciais" (na primeira execução do programa) devem ser "user" e "pass". Essa senha padrão deve ser trocada no primeiro login.
